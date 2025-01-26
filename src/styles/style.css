@@ -1,0 +1,380 @@
+/* src/styles/style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px;
+    background-color: #524f4f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+    max-height: 300px;  /* Added max-height */
+}
+
+.profile-picture {
+    width: 250px;  /* Adjusted width */
+    height: 250px; /* Adjusted height */
+    overflow: hidden; /* Added overflow control */
+    border-radius: 50%;
+    margin-right: 20px;
+    display: flex;     /* Added display flex */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content h1 {
+    margin-bottom: 0;
+}
+
+.header-content p {
+    margin-top: 0;
+}
+
+.header ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.nav {
+    margin-top: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #e9e9e9;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #111111;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+section h2 {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-item {
+    background-color: #3a3737;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.project-role {
+    font-style: italic;
+    font-size: 0.9rem;
+    color:#c43cee;
+}
+
+.project-description {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #a09a9a;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill-name {
+    font-weight: bold;
+    width: 150px;
+}
+
+.skill-bar {
+    flex: 1;
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #39e1ff;
+    border-radius: 5px;
+}
+
+.proficiency-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.proficiency-item {
+    padding: 15px;
+    background-color: #3a3737;
+    border-radius: 8px;
+}
+
+.proficiency-category {
+    font-weight: bold;
+}
+
+.proficiency-item-list {
+    margin-top: 5px;
+}
+
+.education-item h3 {
+    margin-bottom: 5px;
+}
+
+.other-skills-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.other-skills-list li {
+    margin-bottom: 10px;
+}
+
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Add these media queries at the end of the file */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        max-height: none;
+        padding: 15px;
+        margin: 15px 10px;
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .header-content {
+        text-align: center;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-item {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .social-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    section {
+        margin: 15px 10px;
+        padding: 15px;
+    }
+
+    .project-item {
+        padding: 12px;
+    }
+
+    .skill-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .skill-name {
+        width: 100%;
+        text-align: left;
+    }
+
+    .skill-bar {
+        height: 15px;  /* Increased height for better touch interaction */
+    }
+
+    .proficiency-item {
+        padding: 12px;
+    }
+
+    .proficiency-item-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .proficiency-item-list span {
+        background-color: #333;
+        color: #fff;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .other-skills-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .other-skills-list li {
+        margin-bottom: 0;
+        background-color: #333;
+        color: #fff;
+        padding: 8px;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    /* Additional mobile optimizations */
+    section {
+        border-radius: 10px;
+        margin: 15px;
+    }
+
+    .project-list {
+        gap: 15px;
+    }
+
+    .education-item {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+/* Add styles for even smaller screens */
+@media screen and (max-width: 480px) {
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .header {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .other-skills-list {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        margin: 10px;
+        padding: 12px;
+    }
+}
