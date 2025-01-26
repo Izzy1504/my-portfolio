@@ -10,7 +10,10 @@ import './styles/style.css';
 
 const App = () => {
    const personal_info = {
-        "name": "Doan Minh Khoi",
+        "name": {
+            "display": "Doan Minh Khoi",
+            "link": "https://www.facebook.com/profile.php?id=100076244591901" // Replace with your actual Facebook URL
+        },
         "nationality": "Vietnamese",
          "location":"Ho Chi Minh City",
          "major":"Information Technology",
