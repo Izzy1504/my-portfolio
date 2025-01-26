@@ -126,6 +126,17 @@ section h2 {
     border-radius: 8px;
 }
 
+.project-item h3 a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-item h3 a:hover {
+    color: #39e1ff;
+    text-decoration: underline;
+}
+
 .project-role {
     font-style: italic;
     font-size: 0.9rem;

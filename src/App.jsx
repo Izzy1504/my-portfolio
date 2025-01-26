@@ -18,7 +18,7 @@ const App = () => {
         "email": "khoiminhdoan1504@gmail.com",
         "Github": "https://github.com/Izzy1504",
         "phone": "0564695640",
-        "linkedin": "https://www.linkedin.com/in/doan-minh-khoi-1504/"
+        "linkedin": "https://www.linkedin.com/in/kh%C3%B4i-minh-%C4%91o%C3%A0n-undefined-2a03a52a4/"
     }
 
     const summary = "A highly motivated and detail-oriented IT student with a strong foundation in database technologies, big data processing, and software development. I am eager to apply my skills in data engineering to contribute to challenging projects.";
@@ -27,26 +27,30 @@ const App = () => {
       {
             "title": "Music Website",
             "role": "Full-Stack Developer",
-             "year": "2024",
-            "description": "Developed a web application for streaming music. Implemented features like search, playlist management, user authentication, and integrate with youtube's api."
+            "year": "2024",
+            "description": "Developed a web application for streaming music. Implemented features like search, playlist management, user authentication, and integrate with youtube's api.",
+            "link": "https://github.com/Izzy1504/NOTIFY_WEB"
         },
         {
             "title": "Sales Website",
             "role": "Full-Stack Developer",
             "year": "2022",
-            "description": "Implemented the front-end user interface using HTML, CSS, Bootstrap, JavaScript. Built back-end functionality with PHP. Managed database using XAMPP and SQL."
+            "description": "Implemented the front-end user interface using HTML, CSS, Bootstrap, JavaScript. Built back-end functionality with PHP. Managed database using XAMPP and SQL.",
+            "link": null
         },
         {
             "title": "Campsite Management System",
             "role": "Full-Stack Developer",
              "year": "2023",
-            "description": "Designed the database using ERD and EERD, developed a web application using HTML, CSS, NodeJS, JavaScript (front end) and PHP API (back end). Managed the database with SQL Server and integrated API calls."
+            "description": "Designed the database using ERD and EERD, developed a web application using HTML, CSS, NodeJS, JavaScript (front end) and PHP (back end). Managed the database with SQL Server.",
+            "link": "https://github.com/Izzy1504/QUANRANTINE_CAPSITE_19"
         },
         {
             "title": "Cake-shop",
             "role": "Front-End Developer",
-            "year":"2021",
-            "description": "An e-commerce shop for cakes and desserts. Using ReactJS, NodeJS;. My team and me developed the functions, fixed Ul, create more pages, moreover we test this system with automationtestUl, and whitebox documents."
+            "year":"2024",
+            "description": "An e-commerce shop for cakes and desserts. Using ReactJS, NodeJS;. My team and me developed the functions, fixed Ul, create more pages, moreover we test this system with automationtestUl, and whitebox documents.",
+            "link": "https://github.com/Izzy1504/CAKE_SHOP"
         },
 
     ]

@@ -18,7 +18,15 @@ const Projects = ({ projects }) => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.4, delay: index * 0.1}}
                        >
-                        <h3>{project.title}</h3>
+                        <h3>
+                            {project.link ? (
+                                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                    {project.title}
+                                </a>
+                            ) : (
+                                project.title
+                            )}
+                        </h3>
                         <p className="project-role">
                         {project.role} - {project.year}
                         </p>
