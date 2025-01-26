@@ -220,7 +220,7 @@ section h2 {
 .social-links a {
     display: inline-flex;
     align-items: center;
-    color: #333333;
+    color: #ffffff;
     text-decoration: none;
     margin-right: 1.5rem;
     padding: 0.5rem;
@@ -228,12 +228,13 @@ section h2 {
 }
 
 .social-links a:hover {
-    color: #000000;
+    color: #cccccc;
 }
 
 .icon {
     margin-right: 0.5rem;
     font-size: 1.2rem;
+    color: #ffffff;
 }
 
 /* Add these media queries at the end of the file */
