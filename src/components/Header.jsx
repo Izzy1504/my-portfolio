@@ -15,7 +15,19 @@ const Header = ({ personal_info }) => {
                 />
             </div>
             <div className='header-content'>
-                <h1>{personal_info.name}</h1>
+                <h1>
+                    <a 
+                        href={personal_info.name.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        style={{ 
+                            color: 'inherit', 
+                            textDecoration: 'none' 
+                        }}
+                    >
+                        {personal_info.name.display}
+                    </a>
+                </h1>
                 <p>{personal_info.major} | {personal_info.location}</p>
                 <p>{personal_info.nationality} | {personal_info.languages}</p>
                 <div className="social-links">
