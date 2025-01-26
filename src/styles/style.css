@@ -13,8 +13,8 @@ body {
     display: flex;
     align-items: center;
     padding: 2rem;
-    background: #161515;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* background: #030303; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .profile-picture {
